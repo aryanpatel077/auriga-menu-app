@@ -64,7 +64,8 @@ export default async function page({ params }: Props) {
 
   return (
     <>
-    <div className="bg-white w-[70%] rounded p-3 shadow">
+    <ProductHeader slug={product.slug} />
+    <div className="bg-white w-[100%] rounded p-3 shadow">
       <ProductNavbar slug={product.slug} />
       <ProductTitle title={product.title} />
       <ProductDescription description={product.description} />
