@@ -8,7 +8,7 @@ interface props {
 
 export default function Card({ product }: props) {
   return (
-    <div className="md:w-64 md:h-96 w-64 h-72 sm:w-96 sm:h-96 m-3 rounded overflow-hidden border cursor-pointer">
+    <div className="w-72 h-96 md:w-72 md:h-64  my-10 md:my-8 rounded  border cursor-pointer">
       <Link href={`/product/${product.slug}`}>
         <img src={product.thumbnail} alt="" className="w-full h-36" />
         <div className="p-1">
@@ -20,10 +20,10 @@ export default function Card({ product }: props) {
           </div>
           <div className="flex text-reg font-light ">
             <p className=" mr-3">{product.price} $</p>
-            <p className="mr-3 font-bold text-green-600">{product.discountPercentage}% Discount today</p>
+            <p className="mr-3 font-bold text-green-600">{product.discountPercentage}% discount</p>
             <p></p>
           </div>
-          <p className="text-sm mt-1 font-bold">Available in Stock {product.stock} items</p>
+          <p className="text-sm mt-1 font-bold">Available {product.stock} items</p>
         </div>
       </Link>
     </div>

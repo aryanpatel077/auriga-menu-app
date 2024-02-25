@@ -14,8 +14,7 @@ export default function Navbar() {
        <Link href={"/"} className="font-bold text-gray-700 text-2xl">
         Shoping Menu
       </Link>
-      <div className="flex md:flex-row  flex-col gap-2 sm:text-sm font-semibold lg:gap-8 lg:text-base">
-        <Link href="/">Product</Link>
+      <div className="flex flex-row gap-2 sm:text-sm font-semibold lg:gap-8 lg:text-base">
         <Link href="/about">About</Link>
         <Link href="/contact">Contact</Link>
       </div>
