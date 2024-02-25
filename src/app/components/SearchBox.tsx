@@ -97,7 +97,7 @@ export default function SearchBox() {
           return null;
         }
       //   router.push(`/search?city=${product}`);
-      router.push(`/search=${product}`);
+      router.push(`/product/${product}`);
         setproduct("");
       }}
     >
