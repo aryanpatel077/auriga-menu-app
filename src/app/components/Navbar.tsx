@@ -15,7 +15,7 @@ export default function Navbar() {
         Shoping Menu
       </Link>
       <div className="flex md:flex-row  flex-col gap-2 sm:text-sm font-semibold lg:gap-8 lg:text-base">
-        <Link href="/product">Product</Link>
+        <Link href="/">Product</Link>
         <Link href="/about">About</Link>
         <Link href="/contact">Contact</Link>
       </div>
